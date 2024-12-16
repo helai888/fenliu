@@ -1,0 +1,4 @@
+[Rule]
+DOMAIN,www.ifastgb.com,Proxy
+DOMAIN,sentry.ifastgb.com,Proxy
+DOMAIN,talsec-elk.ifastgb.com,Proxy
