@@ -2,3 +2,4 @@
 DOMAIN,api.koho.ca,Proxy
 IP-CIDR,47.115.141.240/32,Proxy
 IP-CIDR,106.75.233.234/32,Proxy
+DOMAIN,assets.koho.ca,Proxy
