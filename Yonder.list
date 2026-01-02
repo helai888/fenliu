@@ -1,0 +1,8 @@
+# Yonder Card 分流规则
+# 包含 App API、Webview 及登录鉴权服务
+# 更新时间：2026-01-02
+
+DOMAIN-SUFFIX,yondercard.com
+DOMAIN-SUFFIX,yonderhq.com
+DOMAIN-SUFFIX,yonder.com
+DOMAIN-KEYWORD,yonder
