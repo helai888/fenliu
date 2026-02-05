@@ -1,0 +1,35 @@
+# --- TT语音 核心业务域名 ---
+# 处理用户资料、房间列表、账户财富等核心 API
+DOMAIN-SUFFIX,ttvoice.com
+DOMAIN-SUFFIX,ttvoice.cn
+DOMAIN-SUFFIX,tt-v.cn
+
+# --- 运营与数据中台 (非常关键) ---
+# 处理你抓包看到的 /iopRes/ (弹窗、资源、广告配置) 及 /clientreport (日志上报)
+DOMAIN-SUFFIX,skyengine.com.cn
+DOMAIN-SUFFIX,skyeyun.com
+
+# --- 第三方推送与环境安全 ---
+# 个推 (GeTui) 消息通道，防止通过推送通道判断原始 IP
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,igexin.com
+
+# --- 广告与商业化 (防止地域性广告泄露) ---
+# 字节跳动穿山甲广告相关，包含你抓包到的 tobidad.cn
+DOMAIN-SUFFIX,tobidad.cn
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-SUFFIX,volengine.com
+DOMAIN-SUFFIX,snssdk.com
+
+# --- 地理位置与地图服务 ---
+# 百度地图 SDK，拦截并代理以隐藏真实坐标尝试
+DOMAIN,loc.map.baidu.com
+DOMAIN-SUFFIX,map.baidu.com
+
+# --- HTTPDNS 劫持 (防止 App 走后门获取真实 IP) ---
+# 强制代理阿里云、腾讯云、百度云的 HTTPDNS 解析服务器
+IP-CIDR,203.107.1.1/32,no-resolve
+IP-CIDR,119.29.29.29/32,no-resolve
+IP-CIDR,223.5.5.5/32,no-resolve
+IP-CIDR,180.76.76.76/32,no-resolve
